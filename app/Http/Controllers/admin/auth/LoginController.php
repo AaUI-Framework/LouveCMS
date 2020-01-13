@@ -24,7 +24,7 @@ class LoginController extends Controller
 
     public function LoginForm()
     {
-        $login =  Auth::guard('admin')->logout();
+        Auth::guard('admin')->logout();
         return view('admin.auth.login');
     }
 
@@ -35,5 +35,10 @@ class LoginController extends Controller
         }
 
         return back()->withErrors(['email' => 'Email or password are wrong.']);
+    }
+
+    public function logout(){
+        Auth::guard('admin')->logout();
+        return redirect('admin/login');
     }
 }

@@ -18,13 +18,14 @@ Artisan::command('inspire', function () {
 })->describe('Display an inspiring quote');
 
 
-//COMMAND FOR CREATE USER
+//Comando para criar um usuario
 Artisan::command('create:user', function () {
 
-    $name = $this->ask('Name?');
-    $email = $this->ask('Email?');
-    $pwd = $this->ask('Password?');
-    // $pwd = $this->secret('Password?'); // or use secret() to hide the password being inputted
+    $name = $this->ask('Nome ');
+    $email = $this->ask('Email ');
+    $pwd = $this->secret('Senha ');
+
+    // Insere user
     \DB::table('users')->insert([
         'name' => $name,
         'email' => $email,
@@ -32,16 +33,17 @@ Artisan::command('create:user', function () {
         'created_at' => date_create()->format('Y-m-d H:i:s'),
         'updated_at' => date_create()->format('Y-m-d H:i:s'),
     ]);
-    $this->info('Account created for '.$name);
+    $this->info('Admin criado com sucesso');
 });
 
-//COMMAND FOR CREATE ADMIN
+//Comando para criar um admin
 Artisan::command('create:admin', function () {
 
-    $name = $this->ask('Name?');
-    $email = $this->ask('Email?');
-    $pwd = $this->ask('Password?');
-    // $pwd = $this->secret('Password?'); // or use secret() to hide the password being inputted
+    $name = $this->ask('Nome ');
+    $email = $this->ask('Email ');
+    $pwd = $this->secret('Senha ');
+
+    // Insere admin
     \DB::table('admins')->insert([
         'name' => $name,
         'email' => $email,
@@ -49,6 +51,6 @@ Artisan::command('create:admin', function () {
         'created_at' => date_create()->format('Y-m-d H:i:s'),
         'updated_at' => date_create()->format('Y-m-d H:i:s'),
     ]);
-    $this->info('Account created for '.$name);
+    $this->info('Admin criado com sucesso');
 });
 

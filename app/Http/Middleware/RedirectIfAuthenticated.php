@@ -17,6 +17,9 @@ class RedirectIfAuthenticated
      */
     public function handle($request, Closure $next, $guard = null)
     {
+        // Verifica qual login foi feito e redireciona para sua devida pagina
+        // Admin vai para pagina home do /ADMIN
+        // Web vai para pagina que esta atras
         switch ($guard) {
             case 'admin':
                 if (Auth::guard($guard)->check()) {

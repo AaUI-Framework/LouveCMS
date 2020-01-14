@@ -96,6 +96,7 @@ class ComposerStaticInit6a1db6598198f898543afa8beb90d57e
         ),
         'L' => 
         array (
+            'Lucascudo\\LaravelPtBRLocalization\\' => 34,
             'League\\Flysystem\\' => 17,
             'Laravel\\Tinker\\' => 15,
         ),
@@ -299,6 +300,10 @@ class ComposerStaticInit6a1db6598198f898543afa8beb90d57e
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Lucascudo\\LaravelPtBRLocalization\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lucascudo/laravel-pt-br-localization/src',
+        ),
         'League\\Flysystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
@@ -406,6 +411,7 @@ class ComposerStaticInit6a1db6598198f898543afa8beb90d57e
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Middleware\\isAdmin' => __DIR__ . '/../..' . '/app/Http/Middleware/isAdmin.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -1980,6 +1986,7 @@ class ComposerStaticInit6a1db6598198f898543afa8beb90d57e
         'League\\Flysystem\\Util\\ContentListingFormatter' => __DIR__ . '/..' . '/league/flysystem/src/Util/ContentListingFormatter.php',
         'League\\Flysystem\\Util\\MimeType' => __DIR__ . '/..' . '/league/flysystem/src/Util/MimeType.php',
         'League\\Flysystem\\Util\\StreamHasher' => __DIR__ . '/..' . '/league/flysystem/src/Util/StreamHasher.php',
+        'Lucascudo\\LaravelPtBRLocalization\\LaravelPtBRLocalizationServiceProvider' => __DIR__ . '/..' . '/lucascudo/laravel-pt-br-localization/src/laravel-pt-BR-localization.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV5.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV6' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV6.php',

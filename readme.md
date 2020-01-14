@@ -1,10 +1,10 @@
 <p align="center"><img src="https://i.ibb.co/3BBNqcd/logo.png" width="400"></p>
 
 
-# About Louve
+# Sobre Louve
 
-Louve is a simple CMS for managing a pre-configured blog.
+Louve é um CMS simples para o gerenciamento de um blog.
 
-## License
+## Licença
 
-The LouveCMS is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+O LouveCMS é software open-source software licenciado sob o [MIT license](https://opensource.org/licenses/MIT).

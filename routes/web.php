@@ -28,6 +28,8 @@ Route::group(['prefix' => '/'], function (){
 // Grupo de Rotas do /ADMIN  - painel administrativo
 Route::group(['prefix' => '/admin', 'middleware' => 'isAdmin'], function (){
    Route::get('/', function (){
-       return view('admin.home');
+       return view('admin.home', [
+           'page_title' => 'Dashboard',
+       ]);
    })->name('admin.home');
 });

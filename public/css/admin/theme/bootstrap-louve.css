@@ -30,6 +30,25 @@
     border-radius: 4px;
 }
 
+/*===*/
+
+.btn.with.icon{
+    padding: 9px;
+}
+
+.btn.with.icon span {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.with.icon.grey {
+    background: #f7f7f7;
+    color: #00a17b;
+}
+
 /*
   bootstrap button color
 */

@@ -2,8 +2,8 @@
 
 @section('content')
 
-    <div class="parent-center">
-        <div class="login-content">
+    <div class="parent center">
+        <div class="login content">
             <div class="logo mb-4">
                 <img src="{{ asset('img/logo.png') }}" alt="">
             </div>
@@ -36,11 +36,16 @@
                 </button>
 
                 @if (Route::has('password.request'))
-                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                    <a class="btn btn-link btn-sm font size15px" href="{{ route('password.request') }}">
                         {{ __('Forgot Your Password?') }}
                     </a>
                 @endif
             </form>
         </div>
     </div>
+
+
+
+
+
 @endsection

@@ -22,8 +22,8 @@
     <link href="{{ asset('css/admin/vendor/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admin/vendor/media.css') }}" rel="stylesheet">
 </head>
-<body>
-<div id="app">
+<body class="body login">
+<div>
     <main>
         @yield('content')
     </main>

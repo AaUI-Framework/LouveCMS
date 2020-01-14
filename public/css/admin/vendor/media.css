@@ -3,13 +3,13 @@
 */
 
 @media only screen and (max-width: 600px) {
-    .login-content {
+    .login.content {
         left: initial;
         border: none;
         padding: 20px !important;
     }
 
-    .parent-center {
+    .parent.center {
         justify-content: center;
         align-items: baseline;
         padding-top: 40px;

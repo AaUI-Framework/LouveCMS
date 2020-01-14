@@ -12,18 +12,43 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3ecf640728.js" crossorigin="anonymous"></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/framework/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admin/theme/bootstrap-louve.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admin/vendor/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admin/vendor/media.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin/vendor/atributes.css') }}" rel="stylesheet">
 </head>
 <body>
-<div id="app">
+
+<div class="dark menu side white">
+    <div class="logo text-center">
+        <img src="{{ asset('img/logo-mini.png') }}" alt="">
+    </div>
+    <div class="content">
+        <ul>
+            <li><a class="true" href="#"><span><i class="fas fa-home"></i></span>Dashboard</a></li>
+            <li><a href="#"><span><i class="fas fa-sticky-note"></i></span>Posts</a></li>
+            <li><a href="#"><span><i class="fas fa-list"></i></span>Cadastros</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="menu top transparent">
+    <div class="page title">
+        <span>{{ $page_title }}</span>
+    </div>
+    <div class="other informations">
+        <button class="btn with icon grey"><span><i class="fas fa-cog"></i></span></button>
+    </div>
+</div>
+
+
+{{--<div id="app">
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
@@ -72,6 +97,6 @@
     <main class="py-4">
         @yield('content')
     </main>
-</div>
+</div>--}}
 </body>
 </html>

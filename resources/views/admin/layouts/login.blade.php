@@ -17,11 +17,10 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-
-    <!-- TEMPORARY BOOTSTRAP CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/framework/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin/theme/bootstrap-louve.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin/vendor/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin/vendor/media.css') }}" rel="stylesheet">
 </head>
 <body>
 <div id="app">

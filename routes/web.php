@@ -27,9 +27,7 @@ Route::group(['prefix' => '/'], function (){
 
 // Grupo de Rotas do /ADMIN  - painel administrativo
 Route::group(['prefix' => '/admin', 'middleware' => 'isAdmin'], function (){
-   Route::get('/', function (){
-       return view('admin.home', [
-           'page_title' => 'Dashboard',
-       ]);
-   })->name('admin.home');
+   Route::get('/', 'admin\vendor\AppController@index')->name('admin.home');
+   Route::post('/', 'admin\content\DashboardController@index')->name('admin.home.post');
+   Route::post('/posts', 'admin\content\DashboardController@posts')->name('admin.posts.post');
 });

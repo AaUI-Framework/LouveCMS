@@ -32,4 +32,8 @@ class Admin extends Authenticatable
         'password', 'remember_token',
     ];
 
+    public function letter(){
+        return $this->name[0];
+    }
+
 }

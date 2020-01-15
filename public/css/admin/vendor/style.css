@@ -1,8 +1,17 @@
+*{
+    outline: none !important;
+}
+
 /*
     body
 */
 body{
     background: #eaeaea;
+    transition: background .4s ease;
+}
+
+body.dark {
+    background: #1d1d1d;
 }
 
 .body.login {
@@ -47,28 +56,54 @@ body{
     position: absolute;
     left: 0;
     top: 0;
-
     display: flex;
     align-items: center;
+    transition: background .4s ease;
+}
+
+.menu.side::before{
+    content: "";
+    width: 60px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #d8d8d8;
+    transition: background .4s ease;
 }
 
 .menu.side.white {
-    background: #fff;
+    background: #e2e2e2;
+}
+
+.dark .menu.side{
+    background: #131313;
+}
+
+.dark .menu.side::before {
+    background: #0a0a0a;
 }
 
 /*===*/
 
 .menu.side .logo {
-    padding: 20px 0;
+    padding: 30px 0;
     position: absolute;
     top: 0;
     width: 100%;
+    background: #f5f5f5;
+    transition: background .4s ease;
 }
 
 .menu.side .logo img{
-    height: 100px;
+    height: 50px;
     width: auto;
     margin: 0 auto;
+}
+
+.dark .menu.side .logo {
+    background: #000000;
 }
 
 /*===*/
@@ -90,33 +125,36 @@ body{
 .menu.side .content ul li a{
     display: flex;
     align-items: center;
-    padding: 10px 10px 10px 35px;
+    padding: 0 10px 0 0;
     width: 100%;
     font-size: 18px;
     font-weight: 600;
     color: #9fa2af;
     text-decoration: none;
     transition: color .3s ease;
+    transition: background .3s ease;
 }
 
 .menu.side .content ul li a.true {
-    color: #17a262;
+    color: #00b38b;
+    background: rgba(0, 0, 0, 0.04);
 }
 
 .menu.side .content ul li a span{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: flex;
+    margin-right: 20px;
     align-items: center;
     justify-content: center;
 }
 
 .menu.side .content ul li a i {
-    font-size: 28px;
-    margin-right: 15px;
+    font-size: 24px;
 }
 .menu.side .content ul li a:hover {
-    color: #00c66b;
+    color: #00c79f;
+    background: rgba(0, 0, 0, 0.06);
 }
 
 /*
@@ -140,10 +178,10 @@ body{
 .menu.top .page.title {
     font-size: 30px;
     font-weight: bold;
-    color: #17a262;
+    color: #00b38b;
     width: 50%;
     height: 100%;
-    padding-left: 25px;
+    padding-left: 35px;
     display: flex;
     align-items: center;
 
@@ -155,10 +193,100 @@ body{
 .menu.top .other.informations {
     width: 50%;
     height: 100%;
-    padding-right: 25px;
+    padding-right: 35px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
     float: left;
+}
+
+/* ===*/
+
+.user.image.letter{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    background: #b9d6cf;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 30px;
+    align-items: center;
+    color: #ffffff73;
+    justify-content: center;
+    transition: color .4s ease;
+    transition: background .4s ease;
+}
+
+.user.image.letter:hover{
+    background: #adc7c1;
+    color: #ffffff73;
+}
+
+.dark .user.image.letter {
+    background: #00b38b;
+}
+
+.dark .user.image.letter:hover {
+    background: #008662;
+}
+
+/* seletor darkmode */
+
+.switch.inline{
+    margin: 0 12px 0 0;
+    display: inline-block;
+}
+
+.switch input {
+    display: none;
+}
+
+input[type=checkbox], input[type=radio]{
+    vertical-align: text-top;
+}
+
+.switch input + div {
+    width: 44px;
+    height: 22px;
+    border: 1px solid #dcdcdc;
+    background: #dcdcdc;
+    border-radius: 11px;
+    cursor: pointer;
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.switch input:checked + div {
+    background: #656565;
+    border: 1px solid #656565;
+}
+
+.switch input + div::before {
+    content: "";
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: #ffeb87;
+    pointer-events: none;
+    margin-top: 2px;
+    margin-left: 2px;
+    border-radius: inherit;
+    -webkit-transition: all 0.25s cubic-bezier(0.54, 1.85, 0.5, 1);
+    transition: all 0.25s cubic-bezier(0.54, 1.85, 0.5, 1);
+}
+
+.switch input:checked + div::before {
+    -webkit-transform: translate(22px, 0);
+    -ms-transform: translate(22px, 0);
+    transform: translate(22px, 0);
+    background: #fff;
 }

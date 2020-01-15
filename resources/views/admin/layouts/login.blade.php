@@ -13,14 +13,15 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="{{ asset('fonts/css/fontawesome.css') }}" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/framework/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admin/theme/bootstrap-louve.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admin/vendor/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admin/vendor/media.css') }}" rel="stylesheet">
+
 </head>
 <body class="body login">
 <div>

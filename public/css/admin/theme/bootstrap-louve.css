@@ -45,8 +45,13 @@
 }
 
 .btn.with.icon.grey {
-    background: #f7f7f7;
+    background: #dcdcdc;
     color: #00a17b;
+    transition: background .4s ease;
+}
+
+.dark .btn.with.icon {
+    background: #131313;
 }
 
 /*
@@ -63,4 +68,19 @@
 
 .btn-primary:focus {
     background: #007057 !important;
+}
+
+/*
+   Dropdown
+*/
+
+.user.image.letter.dropdown-toggle::after{
+    display: none;
+}
+
+.dropdown-menu {
+    border: none;
+    margin-top: 15px;
+    border-radius: 4px;
+    padding: 20px 0;
 }

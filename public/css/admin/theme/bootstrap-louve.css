@@ -47,7 +47,6 @@
 .btn.with.icon.grey {
     background: #dcdcdc;
     color: #00a17b;
-    transition: background .4s ease;
 }
 
 .dark .btn.with.icon {
@@ -98,4 +97,24 @@
 .dark .card{
     background: #131313;
     color: #888888;
+}
+
+/*
+    Table
+*/
+
+/* tabelas */
+
+.table thead th {
+    border: none;
+    color:#696969;
+}
+
+.table tbody th, .table tbody td {
+    border-color: #e2e2e2;
+    color: #8a8c98;
+}
+
+.dark .table tbody th, .dark .table tbody td, .dark thead th{
+    border-color: #1d1d1d;
 }

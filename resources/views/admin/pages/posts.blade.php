@@ -1,3 +1,3 @@
 <div class="card card-body">
-    <h2>posts</h2>
+    <button class="btn btn-light"><span><i class="fal plus"></i></span>Novo Post</button>
 </div>

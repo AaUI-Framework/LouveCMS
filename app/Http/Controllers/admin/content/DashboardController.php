@@ -9,9 +9,15 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return response(view('admin.home'));
+        return response()->json([
+            'html' => View('admin.home')->render(),
+            'title' => 'Dashboard'
+        ]);
     }
     public function posts() {
-        return response(view('admin.pages.posts'));
+        return response()->json([
+            'html' => View('admin.pages.posts')->render(),
+            'title' => 'Posts '
+        ]);
     }
 }

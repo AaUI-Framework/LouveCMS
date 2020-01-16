@@ -580,3 +580,14 @@ input[type=checkbox], input[type=radio]{
     }
 }
 
+/*
+    graficos da dashboard
+*/
+
+.chart .title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #00b38b;
+    padding-left: 25px;
+}
+

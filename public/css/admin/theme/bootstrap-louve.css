@@ -28,29 +28,61 @@
     box-shadow: none !important;
     padding: 9px 27px;
     border-radius: 4px;
+    line-height: 40px;
+    transition: opacity .4s ease;
+}
+
+.btn:hover {
+    opacity: 0.7;
 }
 
 /*===*/
 
 .btn.with.icon{
-    padding: 9px;
+    padding: 0px 15px 0 0;
+}
+
+.btn.with.only.icon {
+    padding: 0;
 }
 
 .btn.with.icon span {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
+    float: left;
 }
 
+.btn.with.only.icon span {
+    margin-right: 0;
+}
+
+.btn.with.icon.highlighted span {
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 4px;
+}
+
+
+/*
+   cores do novo button
+*/
 .btn.with.icon.grey {
     background: #dcdcdc;
     color: #00a17b;
 }
 
-.dark .btn.with.icon {
+.dark .btn.with.icon.grey {
     background: #131313;
+}
+
+/* = = */
+
+.btn.with.icon.blue{
+    background: #0071fd;
+    color: white;
 }
 
 /*

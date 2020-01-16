@@ -54,8 +54,8 @@
                 <input type="checkbox" onchange="changemode()">
                 <div></div>
             </label>
-            <button class="btn with icon grey ml-3"><span><i class="fal fa-cog"></i></span></button>
-            <a href="{{ route('admin.logout') }}" class="btn with icon grey ml-3"><span><i class="fal fa-sign-out"></i></span></a>
+            <button class="btn with only icon grey ml-3"><span><i class="fal fa-cog"></i></span></button>
+            <a href="{{ route('admin.logout') }}" class="btn with only icon grey ml-3"><span><i class="fal fa-sign-out"></i></span></a>
             <a class="user image letter dropdown-toggle ml-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 {{ Auth::guard('admin')->user()->letter() }}
             </a>
